@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trần Ngọc Cần | Chuyên viên Ngân hàng</title>
+  <meta name="description"
+    content="Trang cá nhân của Trần Ngọc Cần - Chuyên viên Ngân hàng tại TP. Hồ Chí Minh, hơn 2 năm kinh nghiệm tại Shinhan Bank, Vietcombank và Woori Bank Việt Nam.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Áp dụng theme sớm để tránh nháy màu khi tải trang -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+      } catch (e) { }
+    })();
+  </script>
+</head>
+
+<body>
+  <!-- Thanh điều hướng -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">Ngọc Cần<span>.</span></a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Điều hướng chính">
+        <a href="#about">Về tôi</a>
+        <a href="#experience">Kinh nghiệm</a>
+        <a href="#achievements">Thành tích</a>
+        <a href="#contact">Liên hệ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Chuyển chế độ sáng/tối">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round">
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menuToggle" aria-label="Mở menu" aria-expanded="false"
+          aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Phần đầu -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <p class="hero-greeting reveal">Xin chào, tôi là</p>
+        <h1 class="hero-name reveal">Trần Ngọc Cần</h1>
+        <h2 class="hero-role reveal">Chuyên viên Ngân hàng</h2>
+        <p class="hero-intro reveal">
+          Hơn 2 năm kinh nghiệm tại Shinhan Bank, Vietcombank và Woori Bank Việt Nam, tốt nghiệp ngành Tài chính - Ngân
+          hàng, có thành tích nổi bật về tăng trưởng dư nợ và doanh số.
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#contact" class="btn btn-primary">Liên hệ</a>
+          <a href="#achievements" class="btn btn-ghost">Xem thành tích</a>
+        </div>
+      </div>
+      <div class="hero-bg" aria-hidden="true"></div>
+    </section>
+
+    <!-- Về tôi -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title reveal">Về tôi</h2>
+        <div class="about-grid">
+          <div class="about-avatar reveal">
+            <span aria-hidden="true">TC</span>
+            <!-- Nếu không có avatar.jpg, ảnh tự ẩn và hiện chữ "TC" -->
+            <img src="avatar.jpg" alt="Ảnh đại diện Trần Ngọc Cần" onerror="this.remove()">
+          </div>
+          <div class="about-text">
+            <p class="reveal">
+              Tôi là chuyên viên ngân hàng tại TP. Hồ Chí Minh, tốt nghiệp ngành Tài chính - Ngân hàng tại Đại học Kinh
+              tế
+              TP.HCM. Tôi từng làm tập sự tại Công ty Chứng khoán MB, sau đó có hơn 2 năm kinh nghiệm thực tế tại
+              Shinhan
+              Bank Việt Nam, Vietcombank chi nhánh Tân Bình và hiện đang làm việc tại Woori Bank Việt Nam.
+            </p>
+            <p class="reveal">
+              Tôi mong muốn được học hỏi, lắng nghe, gắn bó lâu dài với ngân hàng, nâng cao kỹ năng và kinh nghiệm trong
+              lĩnh vực ngân hàng.
+            </p>
+          </div>
+        </div>
+
+        <h3 class="sub-title reveal">Kỹ năng chuyên môn</h3>
+        <ul class="skill-list">
+          <li class="reveal">Am hiểu nghiệp vụ và quy trình ngân hàng</li>
+          <li class="reveal">Phân tích, đánh giá hồ sơ tín dụng khách hàng để hạn chế rủi ro cho ngân hàng</li>
+          <li class="reveal">Chủ động tìm kiếm và phát triển danh mục khách hàng, thúc đẩy sản phẩm ngân hàng</li>
+          <li class="reveal">Duy trì và phát triển quan hệ lâu dài với khách hàng hiện hữu và tiềm năng</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Kinh nghiệm -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <h2 class="section-title reveal">Kinh nghiệm làm việc</h2>
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <span class="timeline-date">04/2026 - Hiện tại</span>
+            <h3>Chuyên viên</h3>
+            <p class="timeline-org">Woori Bank Việt Nam</p>
+            <p>Phát triển và chăm sóc khách hàng, tư vấn sản phẩm và dịch vụ ngân hàng.</p>
+          </li>
+          <li class="timeline-item reveal">
+            <span class="timeline-date">06/2024 - 12/2025</span>
+            <h3>Chuyên viên Quan hệ Khách hàng</h3>
+            <p class="timeline-org">Vietcombank, chi nhánh Tân Bình</p>
+            <p>Chăm sóc khách hàng hiện hữu, phát triển khách hàng cá nhân và doanh nghiệp mới.</p>
+          </li>
+          <li class="timeline-item reveal">
+            <span class="timeline-date">03/2024 - 06/2024</span>
+            <h3>Chuyên viên Quan hệ Khách hàng</h3>
+            <p class="timeline-org">Shinhan Bank Việt Nam</p>
+            <p>Tìm kiếm và phát triển khách hàng, đẩy mạnh sản phẩm vay tiêu dùng và thẻ tín dụng.</p>
+          </li>
+          <li class="timeline-item reveal">
+            <span class="timeline-date">04/2022 - 04/2023</span>
+            <h3>Tập sự</h3>
+            <p class="timeline-org">Công ty Chứng khoán MB</p>
+            <p>Tập sự và học hỏi nghiệp vụ trong lĩnh vực chứng khoán.</p>
+          </li>
+        </ol>
+
+        <div class="info-grid">
+          <div class="info-card reveal">
+            <h3 class="sub-title">Học vấn</h3>
+            <p class="info-main">Đại học Kinh tế TP. Hồ Chí Minh</p>
+            <p>Ngành Tài chính - Ngân hàng</p>
+            <p class="info-meta">10/2020 - 12/2023 · GPA 8.29/10</p>
+          </div>
+          <div class="info-card reveal">
+            <h3 class="sub-title">Chứng chỉ</h3>
+            <ul class="cert-list">
+              <li><span>2022</span> IC3 - Tin học cơ bản</li>
+              <li><span>2023</span> TOEIC 615</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Thành tích -->
+    <section class="section" id="achievements">
+      <div class="container">
+        <h2 class="section-title reveal">Thành tích</h2>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+                <polyline points="17 6 23 6 23 12" />
+              </svg>
+            </div>
+            <span class="card-date">Tháng 7 và tháng 10/2025</span>
+            <h3>Giải thưởng Tăng trưởng dư nợ xuất sắc</h3>
+            <p>Do Hội sở Vietcombank phát động.</p>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+              </svg>
+            </div>
+            <span class="card-date">6 tháng đầu năm 2025</span>
+            <h3>Giải "Ngôi sao doanh số"</h3>
+            <p>Của Vietcombank chi nhánh Tân Bình.</p>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="6" />
+                <path d="M15.48 12.89L17 22l-5-3-5 3 1.52-9.11" />
+              </svg>
+            </div>
+            <span class="card-date">Năm 2025</span>
+            <h3>Cán bộ doanh số giải ngân cao nhất</h3>
+            <p>Giải thưởng cấp chi nhánh.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Liên hệ -->
+    <section class="section section-alt" id="contact">
+      <div class="container contact-inner">
+        <h2 class="section-title reveal">Liên hệ</h2>
+        <p class="contact-intro reveal">Bạn cần tư vấn sản phẩm, dịch vụ ngân hàng hoặc muốn trao đổi công việc? Hãy
+          liên hệ với tôi qua email hoặc điện thoại, tôi sẽ phản hồi sớm nhất có thể.</p>
+
+        <div class="contact-cards">
+          <a class="contact-card reveal" href="mailto:tnc.5902@gmail.com">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="M22 6l-10 7L2 6" />
+              </svg>
+            </span>
+            <span class="contact-label">Email</span>
+            <span class="contact-value">tnc.5902@gmail.com</span>
+          </a>
+          <a class="contact-card reveal" href="tel:0907704482">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+            </span>
+            <span class="contact-label">Điện thoại</span>
+            <span class="contact-value">0907 704 482</span>
+          </a>
+          <div class="contact-card reveal">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </span>
+            <span class="contact-label">Thành phố</span>
+            <span class="contact-value">TP. Hồ Chí Minh</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Trần Ngọc Cần · Chuyên viên Ngân hàng</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Lên đầu trang">&uarr;</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
